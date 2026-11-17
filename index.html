@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación Física I - CIPA 3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="presentation-container">
+        
+        <!-- Diapositiva 1: Portada -->
+        <div class="slide active slide-portada">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Logo Universidad del Tolima" class="uni-logo" onerror="this.style.display='none'; document.getElementById('logo-placeholder').style.display='block';">
+                <div id="logo-placeholder" class="logo-placeholder" style="display:none;">[ ESPACIO PARA LOGO UNIVERSIDAD ]</div>
+            </div>
+
+            <div class="portada-content">
+                <h1 class="portada-title">Universidad del Tolima</h1>
+                <h2 class="portada-subtitle">Ingeniería en Sistemas — CAT Medellín</h2>
+                
+                <div class="portada-details">
+                    <p><strong>Asignatura:</strong> Física I (Convocatoria 1)</p>
+                    <p><strong>CIPA 3:</strong></p>
+                    <p class="autores">
+                        Daniel Alejandro Pertuz Tamayo<br>
+                        Juan José Hernández<br>
+                        Yedinson Cubillos
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 2: Tema Escogido -->
+        <div class="slide">
+            <h1 class="slide-title">Tema Escogido</h1>
+            <p>De las opciones disponibles en la guía de la Convocatoria 1, el CIPA 3 ha seleccionado:</p>
+            <br>
+            <div class="formula-box" style="text-align: center; font-size: 1.5rem; padding: 25px;">
+                Trabajo, Potencia e Impulso
+            </div>
+            <p style="margin-top: 25px; text-align: center; font-size: 1.15rem;">Enfoque orientado al análisis dinámico de flujos de aire y sistemas mecánicos aplicados a la infraestructura de hardware.</p>
+        </div>
+
+        <!-- Diapositiva 3: Introducción -->
+        <div class="slide">
+            <h1 class="slide-title">Introducción</h1>
+            <p>La física y la ingeniería están profundamente conectadas en el diseño y la optimización de infraestructuras tecnológicas modernas.</p>
+            <br>
+            <ul>
+                <li>El estudio de la mecánica clásica permite comprender y predecir el comportamiento de fluidos y fuerzas en espacios confinados.</li>
+                <li>Mediante la aplicación de los principios de conservación, trabajo y potencia, es posible evaluar el rendimiento de componentes mecánicos críticos.</li>
+                <li>Este trabajo busca tender un puente sólido entre los fundamentos teóricos de la física y su utilidad práctica en el sector tecnológico.</li>
+            </ul>
+        </div>
+
+        <!-- Diapositiva 4: Planteamiento del Problema -->
+        <div class="slide">
+            <h1 class="slide-title">Planteamiento del Problema</h1>
+            <p style="margin-bottom: 12px;">
+                En un Centro de Procesamiento de Datos (CPD), un ventilador axial de alta eficiencia expulsa calor del rack principal. El aire contenido en el ducto de extracción posee una masa <strong>m = 2.5 kg</strong> de aire acumulado por ciclo. Si el sistema ejerce una fuerza constante de empuje <strong>F = 45 N</strong> a lo largo de una distancia de desplazamiento horizontal <strong>d = 3.2 metros</strong> dentro del ducto antes de disiparse al exterior, y este proceso se realiza en un intervalo de tiempo <strong>Δt = 1.5 segundos</strong> partiendo del reposo:
+            </p>
+            <div class="card-mini" style="padding: 10px 14px; margin-bottom: 10px;">
+                <p style="margin-bottom: 4px; color: var(--primary-violet); font-weight: bold;">Preguntas a resolver:</p>
+                <ol style="margin-left: 22px; color: var(--text-main);">
+                    <li>Calcule el <strong>trabajo mecánico (W)</strong> realizado por el sistema de ventilación sobre la masa de aire.</li>
+                    <li>Calcule la <strong>potencia mecánica (P)</strong> desarrollada por el ventilador durante ese intervalo de tiempo.</li>
+                    <li>Calcule el <strong>impulso mecánico (I)</strong> transferido al flujo de aire y la <strong>velocidad final (v<sub>f</sub>)</strong> con la que sale expulsado del ducto.</li>
+                </ol>
+            </div>
+            <div class="symbol-glossary">
+                <div class="symbol-item"><strong>Fuerza (F)</strong><span>N = newtons</span></div>
+                <div class="symbol-item"><strong>Distancia (d)</strong><span>m = metros</span></div>
+                <div class="symbol-item"><strong>Tiempo (Δt)</strong><span>s = segundos</span></div>
+                <div class="symbol-item"><strong>Masa (m)</strong><span>kg = kilogramos</span></div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 5: Marco Teórico -->
+        <div class="slide">
+            <h1 class="slide-title">Marco Teórico</h1>
+            <p>Fórmulas fundamentales aplicadas en el sistema de ventilación:</p>
+            <div class="formula-box">
+                Trabajo Mecánico: W = F · d · cos(θ)
+            </div>
+            <div class="formula-box">
+                Potencia Mecánica: P = W / Δt = F · v
+            </div>
+            <div class="formula-box">
+                Impulso y Dinámica: I = F · Δt = m · v<sub>f</sub>
+            </div>
+            <div class="symbol-glossary">
+                <div class="symbol-item"><strong>Fuerza (F)</strong><span>N = newtons</span></div>
+                <div class="symbol-item"><strong>Distancia (d)</strong><span>m = metros</span></div>
+                <div class="symbol-item"><strong>Trabajo (W)</strong><span>J = joules</span></div>
+                <div class="symbol-item"><strong>Potencia (P)</strong><span>W = watts</span></div>
+                <div class="symbol-item"><strong>Tiempo (Δt)</strong><span>s = segundos</span></div>
+                <div class="symbol-item"><strong>Masa (m)</strong><span>kg = kilogramos</span></div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 6: Trabajo Mecánico (W) -->
+        <div class="slide">
+            <h1 class="slide-title">Trabajo Mecánico (W)</h1>
+            <p>Evaluación de la energía transferida por la fuerza de empuje al desplazar el flujo de aire:</p>
+            <div class="formula-box">
+                Fórmula: W = F · d · cos(θ)
+            </div>
+            <div class="card-mini" style="margin-top: 8px; padding: 12px 16px;">
+                <p style="color: var(--primary-violet); font-weight: bold; margin-bottom: 4px;">Valores previos y especificación:</p>
+                <ul style="margin-top: 2px;">
+                    <li><strong>F</strong> = 45 N (Fuerza constante aplicada)</li>
+                    <li><strong>d</strong> = 3.2 m (Desplazamiento horizontal)</li>
+                    <li><strong>θ</strong> = 0° <span style="color: var(--primary-violet); font-style: italic;">(Nota: El ángulo es 0° porque la fuerza del ventilador y el desplazamiento del aire ocurren en la misma dirección horizontal paralela dentro del ducto, por lo que cos(0°) = 1)</span></li>
+                </ul>
+                <p style="color: var(--primary-violet); font-weight: bold; margin-top: 8px; margin-bottom: 4px;">Desarrollo y Sustitución:</p>
+                <ul style="margin-top: 2px;">
+                    <li>Sustitución en fórmula especializada: W = 45 N · 3.2 m · cos(0°)</li>
+                    <li><strong style="color: var(--accent-green);">Resultado Final: W = 144 Joules (J)</strong></li>
+                </ul>
+            </div>
+            <div class="symbol-glossary">
+                <div class="symbol-item"><strong>Trabajo (W)</strong><span>J = joules</span></div>
+                <div class="symbol-item"><strong>Fuerza (F)</strong><span>N = newtons</span></div>
+                <div class="symbol-item"><strong>Distancia (d)</strong><span>m = metros</span></div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 7: Potencia Mecánica (P) -->
+        <div class="slide">
+            <h1 class="slide-title">Potencia Mecánica (P)</h1>
+            <p>Cálculo de la rapidez con la que el sistema efectúa el trabajo mecánico en el intervalo de tiempo:</p>
+            <div class="formula-box">
+                Fórmula: P = W / Δt
+            </div>
+            <div class="card-mini" style="margin-top: 10px; padding: 14px 18px;">
+                <p style="color: var(--primary-violet); font-weight: bold; margin-bottom: 4px;">Valores previos y especificación:</p>
+                <ul style="margin-top: 2px;">
+                    <li><strong>W</strong> = 144 J (Trabajo mecánico total obtenido)</li>
+                    <li><strong>Δt</strong> = 1.5 s (Intervalo de tiempo transcurrido)</li>
+                </ul>
+                <p style="color: var(--primary-violet); font-weight: bold; margin-top: 8px; margin-bottom: 4px;">Desarrollo y Sustitución:</p>
+                <ul style="margin-top: 2px;">
+                    <li>Sustitución en fórmula especializada: P = 144 J / 1.5 s</li>
+                    <li><strong style="color: var(--accent-green);">Resultado Final: P = 96 Watts (W)</strong></li>
+                </ul>
+            </div>
+            <div class="symbol-glossary">
+                <div class="symbol-item"><strong>Potencia (P)</strong><span>W = watts</span></div>
+                <div class="symbol-item"><strong>Trabajo (W)</strong><span>J = joules</span></div>
+                <div class="symbol-item"><strong>Tiempo (Δt)</strong><span>s = segundos</span></div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 8: Impulso Mecánico y Velocidad (I) -->
+        <div class="slide">
+            <h1 class="slide-title">Impulso Mecánico y Velocidad (I)</h1>
+            <p>Análisis del cambio en la cantidad de movimiento del flujo de aire al ser expulsado:</p>
+            <div class="formula-box">
+                Fórmulas: I = F · Δt  |  v<sub>f</sub> = I / m
+            </div>
+            <div class="card-mini" style="margin-top: 10px; padding: 14px 18px;">
+                <p style="color: var(--primary-violet); font-weight: bold; margin-bottom: 4px;">Valores previos y especificación:</p>
+                <ul style="margin-top: 2px;">
+                    <li><strong>F</strong> = 45 N (Fuerza constante aplicada)</li>
+                    <li><strong>Δt</strong> = 1.5 s (Intervalo de tiempo)</li>
+                    <li><strong>m</strong> = 2.5 kg (Masa del aire acumulado)</li>
+                    <li><strong>v<sub>0</sub></strong> = 0 (Velocidad inicial, parte del reposo)</li>
+                </ul>
+                <p style="color: var(--primary-violet); font-weight: bold; margin-top: 8px; margin-bottom: 4px;">Desarrollo y Despeje:</p>
+                <ul style="margin-top: 2px;">
+                    <li>Cálculo de Impulso: I = 45 N · 1.5 s = <strong style="color: var(--primary-violet);">67.5 N·s</strong></li>
+                    <li>Sustitución en fórmula de velocidad final: v<sub>f</sub> = 67.5 N·s / 2.5 kg</li>
+                    <li><strong style="color: var(--accent-green);">Velocidad Final: v<sub>f</sub> = 27 m/s</strong></li>
+                </ul>
+            </div>
+            <div class="symbol-glossary">
+                <div class="symbol-item"><strong>Impulso (I)</strong><span>N·s = newton-segundo</span></div>
+                <div class="symbol-item"><strong>Masa (m)</strong><span>kg = kilogramos</span></div>
+                <div class="symbol-item"><strong>Velocidad (v<sub>f</sub>)</strong><span>m/s = metros / segundo</span></div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 9: Código Python -->
+        <div class="slide">
+            <h1 class="slide-title">Explicación del Código Python (Colab)</h1>
+            <p style="margin-bottom: 8px;">Automatización del cálculo físico mediante modelado en Python:</p>
+            
+            <div class="code-container">
+                <pre><code>import numpy as np
+import matplotlib.pyplot as plt
+
+# Datos del problema CPD
+F = 45.0  # Fuerza en Newtons
+d = 3.2   # Distancia en metros
+m = 2.5   # Masa en kg
+dt = 1.5  # Tiempo en segundos
+
+# Cálculos físicos
+W = F * d
+P = W / dt
+v_f = (F * dt) / m
+
+print(f"Trabajo: {W} J | Potencia: {P} W | Velocidad: {v_f} m/s")</code></pre>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li><strong>numpy:</strong> Modelado matemático del flujo.</li>
+                    <li><strong>matplotlib:</strong> Gráficas de Trabajo y Potencia vs Tiempo.</li>
+                </ul>
+                <a href="https://colab.research.google.com/drive/1eL7dgpBa6C3eldyt9qnvcPJ6Fgce9FJC" target="_blank" class="colab-btn">
+                    Abrir en Google Colab ↗
+                </a>
+            </div>
+        </div>
+
+        <!-- Diapositiva 10: Conclusiones y Análisis -->
+        <div class="slide">
+            <h1 class="slide-title">Conclusiones y Análisis</h1>
+            <div class="card-mini conclusions-card">
+                <span class="conclusion-item">• El resultado de <strong>144 J de trabajo</strong> representa la energía neta transferida al flujo de aire para vencer la resistencia interna del ducto.</span>
+                <span class="conclusion-item">• La <strong>potencia de 96 W</strong> indica la tasa de transferencia energética por unidad de tiempo desarrollada por el ventilador.</span>
+                <span class="conclusion-item">• La <strong>velocidad final de 27 m/s</strong> obtenida mediante el impulso mecánico garantiza la evacuación térmica eficiente del CPD.</span>
+                <span class="conclusion-item">• <strong>Interpretación de gráficos:</strong> Las curvas de Colab muestran un comportamiento cuadrático en el trabajo y una relación lineal directa en la potencia respecto al tiempo.</span>
+                
+                <div class="conclusion-img-box">
+                    <img id="conclusion-image" src="img/tu-imagen.png" alt="Gráficas de Google Colab">
+                </div>
+            </div>
+        </div>
+
+        <!-- Diapositiva 11: Bibliografía -->
+        <div class="slide">
+            <h1 class="slide-title">Bibliografía y Fuentes de Consulta</h1>
+            <div class="card-mini" style="font-size: 1.05rem; padding: 22px;">
+                <ul style="display: flex; flex-direction: column; gap: 12px; list-style-type: none; margin-left: 0;">
+                    <li>• <strong>Google (Gemini).</strong> (2026). <em>Asistente de Inteligencia Artificial para el diseño estructural, modelado de código analítico (Python/Colab) y estructuración de la presentación web del proyecto CIPA 3</em>.</li>
+                    <li>• <strong>Universidad del Tolima.</strong> (2026). <em>Guía de actividades y fundamentación teórica - Convocatoria 1: Física I</em>. CAT Medellín.</li>
+                    <li>• <strong>Serway, R. A., & Jewett, J. W.</strong> (2018). <em>Física para ciencias e ingeniería</em> (Vol. 1). Cengage Learning.</li>
+                    <li>• <strong>Tipler, P. A., & Mosca, G.</strong> (2005). <em>Física para la ciencia y la tecnología</em> (Vol. 1). Reverté.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Diapositiva 12: Demostración del Experimento -->
+        <div class="slide">
+            <h1 class="slide-title">Demostración del Experimento</h1>
+            <p><strong>Validación Física Casera:</strong></p>
+            <br>
+            <ul style="display: flex; flex-direction: column; gap: 10px;">
+                <li>Montaje práctico basado en polea fija, carro guía y masa colgante para simular la fuerza de tracción constante.</li>
+                <li>Registro empírico de distancias y tiempos con cronómetro para contrastar los valores teóricos con la realidad experimental.</li>
+                <li>Demostración en vivo del funcionamiento del sistema durante la exposición del CIPA 3.</li>
+            </ul>
+        </div>
+
+        <!-- Controles de Navegación -->
+        <div class="nav-controls">
+            <button id="prevBtn" onclick="changeSlide(-1)">Anterior</button>
+            <button id="nextBtn" onclick="changeSlide(1)">Siguiente</button>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
