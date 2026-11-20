@@ -26,8 +26,7 @@
                     <p><strong>CIPA 3:</strong></p>
                     <p class="autores">
                         Daniel Alejandro Pertuz Tamayo<br>
-                        Juan José Hernández<br>
-                        Yedinson Cubillos
+                        Juan José Hernández
                     </p>
                 </div>
             </div>
@@ -248,13 +247,55 @@ print(f"Trabajo: {W} J | Potencia: {P} W | Velocidad: {v_f} m/s")</code></pre>
         <!-- Diapositiva 12: Demostración del Experimento -->
         <div class="slide">
             <h1 class="slide-title">Demostración del Experimento</h1>
-            <p><strong>Validación Física Casera:</strong></p>
-            <br>
-            <ul style="display: flex; flex-direction: column; gap: 10px;">
-                <li>Montaje práctico basado en polea fija, carro guía y masa colgante para simular la fuerza de tracción constante.</li>
-                <li>Registro empírico de distancias y tiempos con cronómetro para contrastar los valores teóricos con la realidad experimental.</li>
-                <li>Demostración en vivo del funcionamiento del sistema durante la exposición del CIPA 3.</li>
-            </ul>
+            <p><strong>Validación Física Casera:</strong> Montaje práctico basado en polea fija, carro guía y masa colgante para simular la fuerza de tracción constante y contrastar mediciones con el cronómetro y el metro.</p>
+
+            <div class="exp-calc-grid">
+                <form id="exp-calc-form" class="exp-form card-mini">
+                    <p class="exp-subtitle">Datos de entrada del experimento:</p>
+                    <div class="exp-inputs">
+                        <label>
+                            Fuerza F (N)
+                            <input type="number" id="exp-f" step="any" value="45" required>
+                        </label>
+                        <label>
+                            Distancia d (m)
+                            <input type="number" id="exp-d" step="any" min="0" value="3.2" required>
+                        </label>
+                        <label>
+                            Ángulo θ (°)
+                            <input type="number" id="exp-theta" step="any" value="0" required>
+                        </label>
+                        <label>
+                            Tiempo Δt (s)
+                            <input type="number" id="exp-t" step="any" min="0.01" value="1.5" required>
+                        </label>
+                        <label class="exp-full">
+                            Masa total m (kg)
+                            <input type="number" id="exp-m" step="any" min="0.01" value="2.5" required>
+                        </label>
+                    </div>
+                </form>
+
+                <div class="exp-results card-mini">
+                    <p class="exp-subtitle">Resultados automáticos:</p>
+                    <div class="exp-result-row">
+                        <span>Trabajo (W = F · d · cos(θ)):</span>
+                        <strong id="exp-out-w">144.00 J</strong>
+                    </div>
+                    <div class="exp-result-row">
+                        <span>Potencia (P = W / Δt):</span>
+                        <strong id="exp-out-p">96.00 W</strong>
+                    </div>
+                    <div class="exp-result-row">
+                        <span>Impulso (I = F · Δt):</span>
+                        <strong id="exp-out-i">67.50 N·s</strong>
+                    </div>
+                    <div class="exp-result-row">
+                        <span>Velocidad Final (v<sub>f</sub> = I / m):</span>
+                        <strong id="exp-out-vf">27.00 m/s</strong>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Controles de Navegación -->

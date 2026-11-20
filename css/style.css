@@ -46,6 +46,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
+    overflow-y: auto;
 }
 
 .slide.active {
@@ -310,4 +311,85 @@ button:active {
     display: block;
     margin: 0 auto;
     object-fit: contain;
+}
+
+/* Calculadora interactiva en Demostración del Experimento (Diapositiva 12) */
+.exp-calc-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.exp-subtitle {
+    color: var(--primary-violet);
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.exp-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.exp-inputs label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-gray);
+}
+
+.exp-inputs .exp-full {
+    grid-column: 1 / -1;
+}
+
+.exp-inputs input {
+    padding: 7px 10px;
+    border-radius: 6px;
+    border: 1px solid #d4bdf0;
+    background-color: #ffffff;
+    color: var(--text-main);
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.exp-inputs input:focus {
+    outline: none;
+    border-color: var(--primary-violet);
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.15);
+}
+
+.exp-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.exp-result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 12px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: 1px solid #e0d0f0;
+    font-size: 0.95rem;
+}
+
+.exp-result-row strong {
+    color: var(--accent-green);
+    font-size: 1.05rem;
+    font-family: monospace;
+}
+
+@media (max-width: 768px) {
+    .exp-calc-grid,
+    .exp-inputs {
+        grid-template-columns: 1fr;
+    }
 }
